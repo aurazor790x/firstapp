@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Resto{% endblock %}
+
+{% block body %}
+    <div id="container" class="container">
+        <div class="header">
+            {{ include('components/navbar.html.twig') }}
+        </div>
+        <section class="main">
+            <div class="main-text">
+                <h1>Cooking classes for <br> everyone</h1>
+                <p>At the Gordon Ramsay Academy</p>
+                <button class="btn-cooking">Get Cooking</button>
+                <div class="overlay"></div>
+            </div>
+        </section>
+        <section class="intro">
+            <h1>About Gordon Ramsay</h1>
+            <p>Internationally renowned, multi-Michelin starred chef Gordon Ramsay has opened a string of successful restaurants across the globe, from the UK and France to
+                Singapore and the United States. Gordon has also become a star of the small screen both in the UK and internationally, with shows such as Kitchen Nightmares,
+                Hell’s Kitchen, Hotel Hell and MasterChef US.</p>
+            <button class="btn-intro">Find out more</button>
+        </section>
+
+        <section class="latest">
+            <h1 class="latest-title">Latest Recipes from Gordon</h1>
+            <p class="latest-text">Here's Some of the Latest Recipes Gordon's Been Cooking Up! Every recipe has the home cook in mind with some of Gordon's signature touches. </p>
+            <div class="latest-recipe">
+                {% for recipe in recipes %}
+                    <div class="recipe-box">
+                        <img src="{{ recipe.imageUrl }}" alt="Image of {{ recipe.title }}" >
+                        <h1>{{ recipe.title }}</h1>
+                        <p>{{ recipe.description }}</p>
+                        <button class="recipe-box-btn">View Recipe</button>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+
+    </div>
+
+{% endblock %}

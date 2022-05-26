@@ -1,0 +1,204 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+html,body{
+  min-height: 100vh;
+}
+body{
+  background-color:#eaeaea ;
+}
+
+#container{
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
+  background-color: white;
+  padding: 10px;
+}
+
+.nav-logo img{
+  width: 10%;
+}
+
+.nav-links ul{
+  list-style: none;
+}
+
+.nav-links li{
+  display: inline-block;
+  font-size: 26px;
+  margin:0 12px;
+}
+
+.main{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'League Spartan', sans-serif;
+  background:url("../images/food_back3.jpg");
+  background-size: cover;
+  background-position-y: 25%;
+}
+
+
+
+.main-text{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-text h1{
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  text-shadow: 0px 0px 15px #000;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+  color: #fff;
+  text-align: center;
+}
+
+.main-text p{
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  text-shadow: 0px 0px 15px #000;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1.2em;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.btn-cooking{
+  padding: 15px 40px;
+  border: none;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.intro, .latest{
+  margin:50px 0;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'League Spartan', sans-serif;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.intro h1{
+  color: #101010;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.intro p{
+  margin: 20px 0;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.01rem;
+}
+
+.intro .btn-intro{
+  text-align: center;
+  border: none;
+  background-color: #494949;
+  color: #fff;
+  letter-spacing: 0.2px;
+  padding: 15px 50px;
+  border-top: 0px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.latest{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'League Spartan', sans-serif;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.latest-title{
+  color: #101010;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.latest-text{
+  margin: 10px 0;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.01rem;
+}
+
+.latest-recipe{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.recipe-box{
+  width: 49%;
+  margin-bottom: 1em;
+}
+
+.recipe-box:nth-child(odd){
+  margin-right:2%;
+}
+
+.recipe-box img{
+  width: 100%;
+}
+
+.recipe-box h1{
+  font-weight: 400;
+}
+
+.recipe-box-btn{
+  text-align: center;
+  border: none;
+  background-color: #494949;
+  color: #fff;
+  letter-spacing: 0.2px;
+  padding: 15px 50px;
+  border-top: 0px;
+  font-family: 'League Spartan', sans-serif;
+  display: block;
+  margin:0 auto;
+}
+
+
+
+
+

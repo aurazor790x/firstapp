@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+{% form_theme formRecipe 'bootstrap_5_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Add a recipe</h1>
+
+
+    {{ form_start(formRecipe) }}
+
+        {{ form_row(formRecipe.title, {'attr' : {'placeholder':"Title of recipe"}} ) }}
+        {{ form_row(formRecipe.description, {'attr' : {'placeholder':"Description of Recipe"}} ) }}
+        {{ form_row(formRecipe.imageUrl, {'attr' : {'placeholder' : "Recipe Image URL"}} ) }}
+
+
+        <button type="submit" class="btn btn-success">
+            {% if editMode %}
+                Enregistrer
+            {% else %}
+                Ajouter l'article
+            {% endif %}
+        </button>
+
+    {{ form_end(formRecipe) }}
+
+{% endblock %}
